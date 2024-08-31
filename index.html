@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zain.developer.com</title>
+    <!-- Favicon -->
+    <link href="1.jpg" rel="Icon">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(120deg, #00c6ff, #0072ff);
+            animation: backgroundAnimation 10s ease-in-out infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .welcome-container {
+            text-align: center;
+            color: white;
+            animation: fadeIn 2s ease;
+        }
+
+        .welcome-container h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .welcome-container p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .start-button {
+            font-size: 1.5em;
+            padding: 15px 30px;
+            color: #0072ff;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .start-button:hover {
+            background-color: #0072ff;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .start-button:active {
+            transform: scale(0.9);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-container">
+        <h1>Welcome</h1>
+        <p>To Zain.developer/portfolio</p>
+        <button class="start-button" onclick="startPortfolio()">Start</button>
+    </div>
+
+    <script>
+        function startPortfolio() {
+            window.location.href = 'home.html';  // Change 'home.html' to your actual home page URL
+        }
+    </script>
+
+</body>
+</html>

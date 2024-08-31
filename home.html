@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zain.developer.com</title>
+    <!-- Favicon -->
+    <link href="1.jpg" rel="Icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #f4f4f4;
+        }
+
+        header {
+            background-color: #282c34;
+            padding: 100px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #61dafb;
+            animation: slideDown 1s ease;
+        }
+
+        header h2 {
+            font-size: 1.8em;
+            margin-top: 20px;
+            color: #f4f4f4;
+            animation: typing 3s steps(22), blink .75s step-end infinite;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid #f4f4f4;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #f4f4f4;
+            }
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 85%;
+            max-width: 1200px;
+        }
+
+        .biography {
+            text-align: center;
+        }
+
+        .biography img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #61dafb;
+        }
+
+        .biography p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+
+        .portfolio-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .portfolio-link a {
+            text-decoration: none;
+            color: #61dafb;
+            font-size: 1.5em;
+            border: 2px solid #61dafb;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .portfolio-link a:hover {
+            background-color: #61dafb;
+            color: #1e1e1e;
+        }
+
+        .experience {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .experience p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+
+        .progress-bar {
+            width: 80%;
+            background-color: #555;
+            border-radius: 20px;
+            margin: 20px auto;
+            overflow: hidden;
+            height: 20px;
+        }
+
+        .progress-bar .progress {
+            height: 100%;
+            width: 85%; /* Update this value to represent your percentage */
+            background-color: #61dafb;
+            text-align: right;
+            padding-right: 10px;
+            box-sizing: border-box;
+            color: #1e1e1e;
+            border-radius: 20px;
+            transition: width 2s ease;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #282c34;
+            color: #ccc;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Welcome Banner -->
+    <header>
+        <h1> I Am M.Zain Nadeem</h1>
+        <h2>asslam-o-alaikum</h2>
+    </header>
+
+    <div class="container">
+
+        <!-- Biography Section -->
+        <section class="biography">
+            <img src="1.jpg" alt="Muhammad Zain Nadeem">
+            <p>Hello! I'm Muhammad Zain Nadeem, a frontend developer and designer with a passion for creating stunning and functional web experiences.</p>
+        </section>
+
+        <!-- Portfolio Link -->
+        <div class="portfolio-link">
+            <a href="portfolio.html"> My Portfolio</a>
+        </div>
+
+        <!-- Experience Section -->
+        <section class="experience">
+            <h2>Experience</h2>
+            <p>Currently studying at Jinnah Government College with a focus on web development.</p>
+            <div class="progress-bar">
+                <div class="progress">85%</div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: tkorkor15@gmail.com</p>
+            <p>Phone: +923150265629</p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Muhammad Zain Nadeem</p>
+    </footer>
+
+</body>
+</html>
