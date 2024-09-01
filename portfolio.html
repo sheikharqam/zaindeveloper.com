@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zain.developer.com</title>
+    <!-- Favicon -->
+    <link href="1.jpg" rel="Icon">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #f4f4f4;
+        }
+
+        header {
+            background-color: #282c34;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: slideDown 1s ease;
+        }
+
+        .container {
+            margin: 100px auto;
+            width: 85%;
+            max-width: 1200px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            animation: fadeIn 2s ease;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #61dafb;
+            border-bottom: 2px solid #61dafb;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .portfolio-item {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .portfolio-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item p {
+            flex: 2;
+            font-size: 1.2em;
+            color: #ccc;
+        }
+
+        .back-to-home {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-to-home a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .back-to-home a:hover {
+            background-color: #61dafb;
+            color: #1e1e1e;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #282c34;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            color: #ccc;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Zain.Developer</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm Zain, a frontend developer and designer with a passion for creating stunning and functional web experiences. I have 3 years of experience in web development and design, specializing in HTML, CSS, JavaScript, and responsive design.</p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-item">
+               <img src="0_E_pHDTVNNCZG_Rxo.jpg"  alt=""> 
+                <p><strong>Project 1:</strong> A dynamic and responsive website built with HTML, CSS, and JavaScript. It features an interactive design and smooth animations.</p>
+                <a href="https://sheikharqam.github.io/educationsystem.com/" target="_blank"> <button>View Project</button></a>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <p><strong>Project 2:</strong> A modern web application developed using React. It includes advanced state management and a user-friendly interface.</p>
+            </div>
+        </section>
+
+        <!-- Back to Home Button -->
+        <div class="back-to-home">
+            <a href="home.html">Back to Home</a>
+        </div>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>I have worked on various projects ranging from small business websites to complex web applications. My expertise lies in creating responsive and user-friendly designs that are both visually appealing and functional.</p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Zain's Portfolio</p>
+    </footer>
+
+</body>
+</html>
+
